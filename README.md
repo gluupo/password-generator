@@ -4,6 +4,7 @@
 - [objective](objective)
 - [usage](usage)
 - [visuals](visuals)
+- [link](link)
 ## objective
 - create a randomized password with requirements being choosing between 8-128 characters and at least 1 of 4 character options.
 
@@ -15,3 +16,6 @@
 
 ## visuals
 ![pgp](./assets/images/pg.png)
+
+## link
+https://gluupo.github.io/password-generator/
