@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var charset = "";
-var blahLength = 0;
+var pwLength = 0;
 var str = "";
 
 // Write password to the #password input
@@ -16,15 +16,15 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 function rando() {
   str = "";
-  for (var i = 0; i < blahLength; i++) {
+  for (var i = 0; i < pwLength; i++) {
     str += charset[Math.floor(Math.random() * charset.length)];
   }
   console.log(str)
 }
 
 function generatePassword() {
-  blahLength = Number(prompt("how many characters would you like your password to be?"));
-  while (isNaN(blahLength) || blahLength < 8 || blahLength > 128) blahLength = Number(prompt("please choose a valid option. the length must be between 8-128 characters."));
+  pwLength = Number(prompt("how many characters would you like your password to be?"));
+  while (isNaN(pwLength) || pwLength < 8 || pwLength > 128) pwLength = Number(prompt("please choose a valid option. the length must be between 8-128 characters."));
   // requires user to choose a number between 8 and 128, otherwise returns "please choose a valid option"
 
   function characterSets() {
